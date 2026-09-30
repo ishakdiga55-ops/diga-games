@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diga Games | العب مجاناً</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🎮 Diga Games</div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="ابحث عن لعبة...">
+        </div>
+    </header>
+
+    <div class="ad-banner" id="ad-top">
+        <p style="text-align:center; color:#888;">[مساحة إعلانية - Monetag]</p>
+    </div>
+
+    <main>
+        <h2 class="section-title">🔥 الألعاب الأكثر شعبية</h2>
+        <div class="games-grid" id="gamesGrid">
+            <div class="game-card" data-name="اختبار سرعة البديهة">
+                <div class="game-icon">⚡</div>
+                <h3>اختبار سرعة البديهة</h3>
+                <p>هل أنت سريع؟ اختبر ردود أفعالك!</p>
+                <button class="play-btn" onclick="startReactionGame()">العب الآن</button>
+            </div>
+            <div class="game-card" data-name="لعبة الذاكرة">
+                <div class="game-icon">🧠</div>
+                <h3>لعبة الذاكرة</h3>
+                <p>اختبر قوة ذاكرتك مع البطاقات.</p>
+                <button class="play-btn" onclick="alert('قريباً جداً!')">العب الآن</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeGame()">&times;</span>
+            <div id="gameArea"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Diga Games. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
